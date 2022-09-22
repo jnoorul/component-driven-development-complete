@@ -2,8 +2,8 @@
 import '../src/index.css';
 
 export const parameters = {
-  layout: 'fullscreen',
   actions: { argTypesRegex: "^on[A-Z].*" },
+  layout: 'fullscreen',
   controls: {
     matchers: {
       color: /(background|color)$/i,
@@ -11,3 +11,14 @@ export const parameters = {
     },
   },
 }
+
+export const decorators = [
+(Story, {kind}) => {
+  const isPages = kind.startsWith('Pages/');
+  const style = isPages ? {} : {padding: '16px'};
+  return(
+    <div style={style}> 
+      <Story />
+    </div>);
+}
+];
