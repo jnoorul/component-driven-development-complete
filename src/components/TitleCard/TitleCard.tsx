@@ -1,6 +1,6 @@
 export function TitleCard() {
     return (
-        <div className=" bg-white p-4">
+        <div className="py-2 bg-white">
             <span className=" text-gray-600">
                 <time>Tuesday, September 27, 2022</time>
             </span>
