@@ -1,3 +1,4 @@
+import { Attendees } from '../components/Attendees/Attendees';
 import { EventDetails } from '../components/EventDetails/EventDetails';
 import { EventLocation } from '../components/EventLocation/EventLocation';
 import { Header } from '../components/Header/Header';
@@ -14,6 +15,7 @@ export function Event() {
                     description={componentDrivenDevelopment.description}
                 />
                 <EventLocation />
+                <Attendees members={componentDrivenDevelopment.attendees} />
             </div>
         </div>
     );
