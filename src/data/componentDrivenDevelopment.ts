@@ -1,7 +1,8 @@
 type Role = 'Member' | 'Organizer' | 'Speaker';
 
-interface Person {
+export interface Member {
     name: string;
+    desc: string;
     role: Role;
 }
 
@@ -9,7 +10,7 @@ interface EventDetails {
     title: string;
     date: string;
     description: string;
-    attendees: Person[];
+    attendees: Member[];
 }
 
 const markdownDesc = `
@@ -49,18 +50,22 @@ export const componentDrivenDevelopment: EventDetails = {
     attendees: [
         {
             name: 'Noorul',
+            desc: 'Software Engineer',
             role: 'Speaker',
         },
         {
             name: 'Ritesh',
+            desc: 'Software Engineer',
             role: 'Organizer',
         },
         {
             name: 'Gaurav',
+            desc: 'Software Engineer',
             role: 'Member',
         },
         {
             name: 'Asti',
+            desc: 'Talent Development',
             role: 'Member',
         },
     ],
