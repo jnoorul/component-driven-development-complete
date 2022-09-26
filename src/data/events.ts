@@ -31,8 +31,8 @@ The event is free and meant to offer TechTalks community members with opportunit
 `;
 
 export const cdd: EventDetails = {
-    title: 'Component Driven Development',
-    date: 'September 27, 2022',
+    title: 'Component Driven (UI) Development using React, Storybook',
+    date: 'Tuesday, September 27, 2022',
     description: markdownDesc,
     attendees: [
         {
@@ -46,13 +46,13 @@ export const cdd: EventDetails = {
             role: 'Organizer',
         },
         {
-            name: 'Gaurav',
+            name: 'James',
             desc: 'Software Engineer',
             role: 'Member',
         },
         {
-            name: 'Asti',
-            desc: 'Talent Development',
+            name: 'Kevin',
+            desc: 'Designer',
             role: 'Member',
         },
     ],

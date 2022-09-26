@@ -10,7 +10,7 @@ export function Event() {
         <div>
             <Header />
             <div className="px-4">
-                <TitleCard />
+                <TitleCard date={cdd.date} title={cdd.title} />
                 <EventDetails description={cdd.description} />
                 <EventLocation />
                 <Attendees members={cdd.attendees} />
