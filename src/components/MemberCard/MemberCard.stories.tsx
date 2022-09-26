@@ -1,4 +1,4 @@
-import { componentDrivenDevelopment } from '../../data/componentDrivenDevelopment';
+import { cdd } from '../../data/events';
 import { MemberCard } from './MemberCard';
 
 export default {
@@ -6,10 +6,6 @@ export default {
     component: MemberCard,
 };
 
-export const Compact = () => (
-    <MemberCard member={componentDrivenDevelopment.attendees[0]} />
-);
+export const Compact = () => <MemberCard member={cdd.attendees[0]} />;
 
-export const Regular = () => (
-    <MemberCard member={componentDrivenDevelopment.attendees[1]} />
-);
+export const Regular = () => <MemberCard member={cdd.attendees[1]} />;

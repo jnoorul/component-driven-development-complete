@@ -1,17 +1,4 @@
-type Role = 'Member' | 'Organizer' | 'Speaker';
-
-export interface Member {
-    name: string;
-    desc: string;
-    role: Role;
-}
-
-interface EventDetails {
-    title: string;
-    date: string;
-    description: string;
-    attendees: Member[];
-}
+import { EventDetails } from './types';
 
 const markdownDesc = `
 
@@ -43,7 +30,7 @@ Participants are encouraged to bring their laptop for this live coding session. 
 The event is free and meant to offer TechTalks community members with opportunities to learn and network. Light refreshments will be served.
 `;
 
-export const componentDrivenDevelopment: EventDetails = {
+export const cdd: EventDetails = {
     title: 'Component Driven Development',
     date: 'September 27, 2022',
     description: markdownDesc,

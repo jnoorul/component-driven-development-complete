@@ -3,7 +3,7 @@ import { EventDetails } from '../components/EventDetails/EventDetails';
 import { EventLocation } from '../components/EventLocation/EventLocation';
 import { Header } from '../components/Header/Header';
 import { TitleCard } from '../components/TitleCard/TitleCard';
-import { componentDrivenDevelopment } from '../data/componentDrivenDevelopment';
+import { cdd } from '../data/events';
 
 export function Event() {
     return (
@@ -11,11 +11,9 @@ export function Event() {
             <Header />
             <div className="px-4">
                 <TitleCard />
-                <EventDetails
-                    description={componentDrivenDevelopment.description}
-                />
+                <EventDetails description={cdd.description} />
                 <EventLocation />
-                <Attendees members={componentDrivenDevelopment.attendees} />
+                <Attendees members={cdd.attendees} />
             </div>
         </div>
     );

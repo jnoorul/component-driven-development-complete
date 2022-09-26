@@ -1,4 +1,4 @@
-import { Member } from '../../data/componentDrivenDevelopment';
+import { Member } from '../../data/types';
 import { RandomAvatar } from '../Avatar/RandomAvatar';
 
 interface MemberCardProps {

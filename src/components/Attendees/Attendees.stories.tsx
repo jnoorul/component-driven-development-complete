@@ -1,4 +1,4 @@
-import { componentDrivenDevelopment } from '../../data/componentDrivenDevelopment';
+import { cdd } from '../../data/events';
 import { Attendees as AttendeesComponent } from './Attendees';
 
 export default {
@@ -6,6 +6,4 @@ export default {
     component: AttendeesComponent,
 };
 
-export const Attendees = () => (
-    <AttendeesComponent members={componentDrivenDevelopment.attendees} />
-);
+export const Attendees = () => <AttendeesComponent members={cdd.attendees} />;

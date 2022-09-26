@@ -1,4 +1,4 @@
-import { Member } from '../../data/componentDrivenDevelopment';
+import { Member } from '../../data/types';
 import { MemberCard } from '../MemberCard/MemberCard';
 
 interface AttendeesProps {
