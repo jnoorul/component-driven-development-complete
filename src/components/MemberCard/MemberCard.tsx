@@ -1,15 +1,22 @@
 import { Member } from '../../data/types';
-import { RandomAvatar } from '../Avatar/RandomAvatar';
+import { MemberAvatar } from '../Avatar/MemberAvatar';
 
 interface MemberCardProps {
     member: Member;
 }
 
+const avatarTypes = [
+    'ShortHairShortCurly',
+    'ShortHairTheCaesar',
+    'ShortHairShortWaved',
+    'Hat',
+];
+
 export function MemberCard({ member }: MemberCardProps) {
     return (
         <div className="p-4 divide-gray-200 rounded-lg bg-white text-center shadow">
             <div className="mx-auto h-32 w-32 flex-shrink-0">
-                <RandomAvatar />
+                <MemberAvatar type={avatarTypes[member.id]} />
             </div>
             <h3 className="mt-4 text-sm font-medium text-gray-900">
                 {member.name}

@@ -1,6 +1,7 @@
 type Role = 'Member' | 'Organizer' | 'Speaker';
 
 export interface Member {
+    id: number;
     name: string;
     desc: string;
     role: Role;

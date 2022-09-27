@@ -1,19 +1,15 @@
 import Avatar from 'avataaars';
 
-const avatarList = [
-    'ShortHairShortCurly',
-    'ShortHairTheCaesar',
-    'ShortHairShortWaved',
-    'Hat',
-];
+interface MemberAvatarProps {
+    type: string;
+}
 
-export function RandomAvatar() {
-    const randomNumber = Math.floor(Math.random() * 10) % 4;
+export function MemberAvatar({ type }: MemberAvatarProps) {
     return (
         <Avatar
             style={{ width: '128px', height: '128px' }}
             avatarStyle="Transparent"
-            topType={avatarList[randomNumber]}
+            topType={type}
             accessoriesType="Prescription02"
             hairColor="BrownDark"
             facialHairType="Blank"

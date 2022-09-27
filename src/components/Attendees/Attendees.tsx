@@ -12,7 +12,7 @@ export function Attendees({ members }: AttendeesProps) {
             <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {members.map((member) => (
                     <li
-                        key={member.name}
+                        key={member.id}
                         className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow"
                     >
                         <MemberCard member={member} />

@@ -36,21 +36,25 @@ export const cdd: EventDetails = {
     description: markdownDesc,
     attendees: [
         {
+            id: 0,
             name: 'Noorul',
             desc: 'Software Engineer',
             role: 'Speaker',
         },
         {
+            id: 1,
             name: 'Ritesh',
             desc: 'Software Engineer',
             role: 'Organizer',
         },
         {
+            id: 2,
             name: 'James',
             desc: 'Software Engineer',
             role: 'Member',
         },
         {
+            id: 3,
             name: 'Kevin',
             desc: 'Designer',
             role: 'Member',
