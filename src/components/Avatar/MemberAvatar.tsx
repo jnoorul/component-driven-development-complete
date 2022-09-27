@@ -1,10 +1,20 @@
 import Avatar from 'avataaars';
 
+export type AvatarType =
+    | 'ShortHairShortCurly'
+    | 'ShortHairTheCaesar'
+    | 'ShortHairShortWaved'
+    | 'Hat';
+
 interface MemberAvatarProps {
-    type: string;
+    type?: AvatarType;
+    mouth?: 'Default' | 'Smile' | 'Sad';
 }
 
-export function MemberAvatar({ type }: MemberAvatarProps) {
+export function MemberAvatar({
+    type = 'Hat',
+    mouth = 'Default',
+}: MemberAvatarProps) {
     return (
         <Avatar
             style={{ width: '128px', height: '128px' }}
@@ -17,7 +27,7 @@ export function MemberAvatar({ type }: MemberAvatarProps) {
             clotheColor="PastelBlue"
             eyeType="Happy"
             eyebrowType="Default"
-            mouthType="Smile"
+            mouthType={mouth}
             skinColor="Light"
         />
     );

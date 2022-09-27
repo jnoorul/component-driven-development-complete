@@ -1,11 +1,11 @@
 import { Member } from '../../data/types';
-import { MemberAvatar } from '../Avatar/MemberAvatar';
+import { AvatarType, MemberAvatar } from '../Avatar/MemberAvatar';
 
 interface MemberCardProps {
     member: Member;
 }
 
-const avatarTypes = [
+export const avatarTypes: AvatarType[] = [
     'ShortHairShortCurly',
     'ShortHairTheCaesar',
     'ShortHairShortWaved',
